@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy Task 02 - Neon Stopwatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Orbitron:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <h1 class="title">NEON CHRONO</h1>
+
+        <div class="watch-container">
+            <div class="circle-box">
+                <svg>
+                    <circle cx="150" cy="150" r="140" id="bg-ring"></circle>
+                    <circle cx="150" cy="150" r="140" id="progress-ring"></circle>
+                </svg>
+                
+                <div class="time-display">
+                    <span id="displayTime">00:00:00</span>
+                    <span id="displayMillis">00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="startStopBtn" class="btn start">
+                <span class="icon">▶</span> Start
+            </button>
+            <button id="lapBtn" class="btn lap" disabled>
+                <span class="icon">⚑</span> Lap
+            </button>
+            <button id="resetBtn" class="btn reset">
+                <span class="icon">↺</span> Reset
+            </button>
+        </div>
+
+        <div class="laps-panel">
+            <h3>Recorded Laps</h3>
+            <ul id="lapsList"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
